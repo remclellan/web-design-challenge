@@ -62,13 +62,13 @@
                     <h1>Visualizations</h1>
                     <div class ="row">
                         <div class="column">
-                            <a target=_blank href="visualization-maxtemp.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Max Temp">
+                            <a target="_blank" href="visualization-maxtemp.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Max Temp">
                                 <img class= "img-responsive img-fluid" src="Resources\assets\images\City Latitude vs. Max Temperature.png"
                                 alt="Latitude vs Temperature">
                             </a>
                         </div>
                         <div class="column"> 
-                            <a target=_blank href="visualization-humidity.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Humidity">
+                            <a target="_blank" href="visualization-humidity.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Humidity">
                                 <img class= "img-responsive img-fluid" src="Resources\assets\images\City Latitude Vs. Humidity Plot.png"
                                 alt="Latitude vs Humidity"> 
                             </a>        
@@ -76,13 +76,13 @@
                     </div>
                     <div class="row">
                         <div class="column">
-                            <a target=_blank href="visualization-cloudiness.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Cloudiness">
+                            <a target="_blank" href="visualization-cloudiness.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Cloudiness">
                                 <img class= "img-responsive img-fluid" src="Resources\assets\images\City Latitude Vs. Cloudiness.png"
                                 alt="Latitude vs Cloudiness">
                             </a>
                         </div>
                         <div class="column">   
-                            <a target=_blank href="visualization-windspeed.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Wind Speed">
+                            <a target="_blank" href="visualization-windspeed.html" data-toggle="tooltip" data-placement="top" title="Latitude vs Wind Speed">
                                 <img class= "img-responsive img-fluid"  src="Resources\assets\images\City Latitude Vs. Wind Speed.png"
                                 alt="Latitude vs Windspeed">
                             </a>        
@@ -99,6 +99,28 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script>
+            /* Get the elements with class="column" */
+            var elements = document.getElementsByClassName("column");
+
+            /* Declare a loop variable */
+            var i;
+
+            /* Two images side by side */
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.flex = "50%";
+                    }
+                }
+
+            /* Four images side by side */
+            function four() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.flex = "25%";
+                }
+            }
+        </script>
     </body>
 
 </html>
