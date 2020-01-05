@@ -24,6 +24,13 @@ h1{
     color: lightseagreen;
 }
 
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: lightseagreen;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
